@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* ------------ NAVIGATION ----------- */
 .nav-container {
     background-color: #1F2937;
-    padding: 20px;
+    padding-top: 20px;
     display: flex;
     justify-content: center;
 }
@@ -15,7 +19,7 @@
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 30px;
+    gap: 50px;
     width: 1000px;
 }
 
@@ -28,4 +32,53 @@
 .links {
     font-size: 18px;
     color: #E5E7EB;
+}
+
+/* ------------ SECTION-ONE-CONTAINER ----------- */
+
+.section-one-container {
+    background-color: #1F2937;
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    justify-content: center;
+}
+
+.section-one-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    width: 450px; 
+    margin-right: 100px;
+}
+
+.title {
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.title-description {
+    font-size: 18px;
+    color: #E5E7EB;
+    flex: 1;
+}
+
+.signup-button {
+    background-color: #3C82F6;
+    color: #D4D6DC;
+    border-radius: 10px;
+    font-weight: bolder;
+    width: 120px;
+    padding: 10px 0 10px 0;
+}
+
+.title-image {
+    display: flex;
+    background-color: #6D747D;
+    text-align: center;
+    color: #E8E9EA;
+    width: 450px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
 }
