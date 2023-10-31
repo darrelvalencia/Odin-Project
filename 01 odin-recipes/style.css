@@ -1,0 +1,52 @@
+body {
+    background-color: darkcyan;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+}
+
+.container {
+    /* border-style: dotted;
+    border-color: black; */
+    margin: 0 auto;
+}
+
+h1 {
+    /* border-style: solid;
+    border-color: white; */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+
+.image {
+    text-align: center;
+}
+
+img {
+    height: auto;
+    width: 500px;
+}
+
+/*  If you wanted to adjust the size of the image without causing it to lose its proportions, you would use a value of “auto” for the height property and adjust the width value */
+/* For example, if an image’s original size was 500px height and 1000px width, using the above CSS would result in a height of 250px. */
+.recipe-div,
+.direction-div {
+    text-align: center;
+}
+
+.recipe-list,
+.direction-list {
+    display: inline-block;
+    text-align: left;
+    width: 300px;
+    padding-left: 100px; /* to move a little to center */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+
+
