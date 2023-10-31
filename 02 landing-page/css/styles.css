@@ -1,1 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+.nav-container {
+    background-color: #1F2937;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+    width: 1000px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+    margin-right: auto;
+}
+
+.links {
+    font-size: 18px;
+    color: #E5E7EB;
+}
