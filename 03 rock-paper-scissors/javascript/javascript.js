@@ -8,24 +8,26 @@ function getComputerChoice () {
 
 function playRound(playerSelection, computerSelection) {
     
+    const playerSelectionLowerCase = playerSelection.toLowerCase();
+
     if (
-        (playerSelection == "rock" && computerSelection == "scissor") ||
-        (playerSelection == "paper" && computerSelection == "rock") ||
-        (playerSelection == "scissor" && computerSelection == "paper")
+        (playerSelectionLowerCase == "rock" && computerSelection == "scissor") ||
+        (playerSelectionLowerCase == "paper" && computerSelection == "rock") ||
+        (playerSelectionLowerCase == "scissor" && computerSelection == "paper")
         ) {
-            return `You Win! ${playerSelection} beats ${computerSelection}`
+            return `You Win! ${playerSelectionLowerCase} beats ${computerSelection}`
     }
 
     else if (
-        (playerSelection == "rock" && computerSelection == "paper") ||
-        (playerSelection == "paper" && computerSelection == "scissor") ||
-        (playerSelection == "scissor" && computerSelection == "rock")
+        (playerSelectionLowerCase == "rock" && computerSelection == "paper") ||
+        (playerSelectionLowerCase == "paper" && computerSelection == "scissor") ||
+        (playerSelectionLowerCase == "scissor" && computerSelection == "rock")
         ) {
-        return `You Lose! ${playerSelection} loses to ${computerSelection}`
+        return `You Lose! ${playerSelectionLowerCase} loses to ${computerSelection}`
     }
 
-    else if (playerSelection == computerSelection) {
-        return `Draw! both uses ${playerSelection}`
+    else if (playerSelectionLowerCase == computerSelection) {
+        return `Draw! both uses ${playerSelectionLowerCase}`
     }
 
     else {
