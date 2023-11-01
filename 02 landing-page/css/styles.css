@@ -199,3 +199,12 @@
     padding: 10px 0 10px 0;
     margin-top: 10px;
 }
+
+/* ------------ SECTION-FOUR-CONTAINER ----------- */
+
+.footer {
+    background-color: #1F2937;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
