@@ -72,6 +72,7 @@
     width: 120px;
     padding: 10px 0 10px 0;
     margin-top: 10px;
+    text-align: center;
 }
 
 .title-image {
@@ -125,3 +126,35 @@
 .box-subtext {
     margin: 0 30px;
 }
+
+/* ------------ SECTION-THREE-CONTAINER ----------- */
+
+.section-three-container {
+    margin-top: 100px;
+    background-color: #E5E7EB;
+    display: flex;
+    justify-content: center;
+}
+
+.section-three-width {
+    border: 2px solid tomato;
+    width: 1000px;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.author {
+    display: flex;
+    justify-content: end;
+    font-weight: bolder;
+    font-size: 24px;
+}
+
