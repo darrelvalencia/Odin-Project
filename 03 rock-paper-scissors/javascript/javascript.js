@@ -28,18 +28,14 @@ function playRound(playerSelection, computerSelection) {
     }
 
     else if (playerSelectionLowerCase == computerSelection) {
-        return `Draw! both uses ${playerSelectionLowerCase}`
+        // return `Draw! both uses ${playerSelectionLowerCase}`
+        return "Draw!"
     }
 
     else {
         return "invalid input"
     }
 }
-
-// const playerSelection = "rock";
-// const computerSelection = getComputerChoice();
-// console.log(playRound(playerSelection, computerSelection));
-
 
 function game() {
     let playerScore = 0;
@@ -51,30 +47,30 @@ function game() {
         const result = playRound(playerSelection, computerSelection);
 
         if (result == "You Win!") {
-            console.log(`You Win! ${playerSelection} beats ${computerSelection}`)
+            console.log(`You Win! Your ${playerSelection.toLowerCase()} beats ${computerSelection}`)
             playerScore += 1;
         }
 
         else if (result == "You Lose!") {
-            console.log(`You Lose! ${playerSelection} loses to ${computerSelection}`)
+            console.log(`You Lose! Your ${playerSelection.toLowerCase()} loses to ${computerSelection}`)
             computerScore += 1;
         }
 
         else if (result == "invalid input") {
-            return console.log("Invalid Input")
+            console.log("Invalid Input")
         }
 
         else {
-            return console.log("Draw")
+            console.log(`Draw! both uses ${computerSelection}`)
         }
     }
 
     if (playerScore > computerScore) {
-        console.log(`YOU WIN with a score of ${playerScore} compared to Computers ${computerScore}`)
+        console.log(`YOU WIN with a score of ${playerScore} compared to Computer ${computerScore}`)
     }
 
     else if (playerScore < computerScore) {
-        console.log(`YOU LOSE with a score of ${playerScore} compared to Computers ${computerScore}`)
+        console.log(`YOU LOSE with a score of ${playerScore} compared to Computer ${computerScore}`)
     }
 
     else {
